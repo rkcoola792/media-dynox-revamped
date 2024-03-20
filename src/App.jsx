@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer/Footer";
 import Test from "./components/Test/Test";
-
+import  Marketing from "./components/Marketing/Marketing.jsx"
 
 function App() {
   const Layout = () => {
@@ -24,7 +24,8 @@ function App() {
       element: <Layout></Layout>,
       children: [
         { path: "/", element: <Homepage></Homepage> },
-        { path: "/marketing", element: <Test></Test> },
+        { path: "/marketing", element: <Marketing
+        ></Marketing> },
       ],
     },
   ]);
