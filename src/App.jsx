@@ -10,8 +10,8 @@ function App() {
   const Layout = () => {
     return (
       <>
-        <div className="header-outlet px-24">
           <Header></Header>
+        <div className="body-outlet px-24">
           <Outlet></Outlet>
         </div>
         <Footer></Footer>

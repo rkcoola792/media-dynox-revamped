@@ -95,7 +95,7 @@ const Header = () => {
         </motion.div>
       )}
 
-      <div className="header flex justify-between  py-8 items-center sticky top-0 bg-slate-50 z-10">
+      <div className="header flex justify-between  py-8 items-center sticky top-0 bg-slate-50 z-10 px-24">
         <div className="left logo font-bold sm:text-xl lg:text-3xl cursor-pointer">
           Media Dynox
           <span className="text-mainred font-bold text-2xl lg:text-3xl ">
