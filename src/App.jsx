@@ -10,8 +10,10 @@ function App() {
   const Layout = () => {
     return (
       <>
-        <Header></Header>
-        <Outlet></Outlet>
+        <div className="header-outlet px-24">
+          <Header></Header>
+          <Outlet></Outlet>
+        </div>
         <Footer></Footer>
       </>
     );
@@ -28,7 +30,7 @@ function App() {
   ]);
 
   return (
-    <div className="App ">
+    <div className="App  ">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
