@@ -6,6 +6,9 @@ export default {
       colors: {
         mainred: "#ff002e",
       },
+      fontFamily:{
+        outfit:["Outfit"]
+      }
     },
   },
   plugins: [],
