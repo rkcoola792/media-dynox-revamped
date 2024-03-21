@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer/Footer";
-import Test from "./components/Test/Test";
+// import Test from "./components/Test/Test";
 import  Marketing from "./components/Marketing/Marketing.jsx"
 
 function App() {
