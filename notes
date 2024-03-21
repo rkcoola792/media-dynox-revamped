@@ -1,3 +1,6 @@
-font- outfit
+/* font- outfit
 
-bg-gradient-to-br from-mainred to-red-300
+bg-gradient-to-br from-mainred to-red-300 */
+
+/* blur radius
+0px 30px 80px -31px rgba(0,0,0,0.65); */

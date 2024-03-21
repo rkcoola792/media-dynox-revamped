@@ -5,7 +5,7 @@ import Explore from "../Explore/Explore";
 
 const Section8 = () => {
   return (
-    <div className="section-8 lg:flex gap-6 lg:gap-12 md:px-24  sm:px-12 sm:pr-36 mt-16 lg:h-[520px] justify-center items-center my-12 px-8 ">
+    <div className="section-8 lg:flex gap-6 lg:gap-12 md:px-24   mt-16 lg:h-[520px] justify-center items-center my-12  ">
       <div className="left lg:w-[30%] lg:text-left lg:mt-4 sm:text-center  lg:flex lg:flex-col gap-44 mb-12  ">
         <motion.h1
           className="lg:text-4xl sm:-ml-6 sm:text-2xl md:text-3xl text-3xl text-center "

@@ -13,6 +13,7 @@ const Section9 = () => {
         y: 0,
         scale: 1.3,
         // boxShadow: "0px 0px 10px 50px rgba(255, 0, 0, 0.5)",
+        // boxShadow: "0 48px 48px -32px rgba(23,16,159,.2), 0 96px 96px -64px rgba(3,2,20,.6)"
       }}
       transition={{ duration: 0.5, delay: 0.1 }}
     >
