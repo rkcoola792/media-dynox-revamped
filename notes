@@ -4,3 +4,6 @@ bg-gradient-to-br from-mainred to-red-300 */
 
 /* blur radius
 0px 30px 80px -31px rgba(0,0,0,0.65); */
+
+/* transition
+transition duration-200 ease-out hover:ease-in */
