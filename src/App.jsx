@@ -11,7 +11,7 @@ function App() {
     return (
       <>
           <Header></Header>
-        <div className="body-outlet px-24">
+        <div className="body-outlet ">
           <Outlet></Outlet>
         </div>
         <Footer></Footer>

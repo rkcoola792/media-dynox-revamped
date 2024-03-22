@@ -7,8 +7,8 @@ import "./Section1.scss"
 
 const Section1 = () => {
   return (
-    <div className="hero-banner flex  items-center ">
-      <div className="left-details sm:w-[60%] flex flex-col text-3xl ">
+    <div className="hero-banner flex  items-center px-24">
+      <div className="left-details sm:w-[60%] flex flex-col text-3xl  ">
         {/* <div className="hero-heading">
         Marketing
       </div>heading */}

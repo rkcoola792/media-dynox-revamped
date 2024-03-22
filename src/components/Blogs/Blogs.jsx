@@ -18,7 +18,6 @@ const Blogs = () => {
           <div className="z-10 sticky top-48 bg-white">
             <Blog></Blog>
           </div>
-
           <div className="z-20 bg-white sticky top-48">
             <Blog></Blog>
           </div>
