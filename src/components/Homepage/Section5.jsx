@@ -4,7 +4,7 @@ import InfiniteScroll from "../InfiniteScroll/Infinitescroll";
 import Explore from "../Explore/Explore";
 const Section5 = () => {
   return (
-    <div className="bg-secondaryRed h-[500px] flex flex-col items-center py-12 text-center overflow-hidden gap-12 px-8 ">
+    <div className="bg-secondaryRed h-[500px] flex flex-col items-center py-12 text-center overflow-hidden gap-12 px-8 mt-12">
       <motion.div
         className="top-heading text-white pt-8"
         initial={{ opacity: 0, y: 75 }}

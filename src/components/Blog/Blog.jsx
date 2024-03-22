@@ -2,7 +2,7 @@ import React from 'react'
 import Explore from "../Explore/Explore";
 const Blog = ({date,heading,subheading,img}) => {
   return (
-    <div className="blog flex gap-6 rounded-lg justify-evenly shadow-blog-shadow p-12 my-6  cursor-pointer border border-white hover:border hover:border-red-400 transition duration-300 ease-out hover:ease-in ">
+    <div className="blog flex gap-6 rounded-lg justify-evenly shadow-blog-shadow p-12 cursor-pointer border border-white hover:border hover:border-red-400 transition duration-300 ease-out hover:ease-in ">
       <div className="left date w-[15%]">
         <p className="text-xl"> March 21, 2024</p>
       </div>
