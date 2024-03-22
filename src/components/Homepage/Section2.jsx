@@ -2,7 +2,8 @@ import React from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import { motion } from "framer-motion";
-import { Explore } from "@mui/icons-material";
+import Explore from "../Explore/Explore";
+
 
 const Section2 = () => {
   return (

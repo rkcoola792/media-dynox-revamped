@@ -1,9 +1,9 @@
 import React from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
-const Explore = ({ text, color, size, hoverColor, hover }) => {
+const Explore = ({ text, color, size, hovercolor, hover }) => {
   color = color ? "white" : "black";
-  hoverColor = hoverColor ? "white" : "red";
+  hovercolor = hovercolor ? "white" : "red";
   return (
     <div className="explore flex items-center gap-2 mt-4 cursor-pointer">
       <div
@@ -11,7 +11,7 @@ const Explore = ({ text, color, size, hoverColor, hover }) => {
       ></div>
       <motion.h1
         className={`text-lg font-medium text-${color} text-${size}`}
-        whileHover={{ x: -20, color: hoverColor }}
+        whileHover={{ x: -20, color: hovercolor }}
         transition={{ duration: 0.4 }}
       >
         {text}

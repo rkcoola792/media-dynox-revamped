@@ -46,7 +46,7 @@ const Cards = ({ title, first, second, third, fourth, color }) => {
         </h3>
       </div>
       <div className="">
-        <Explore text="Read more" hoverColor="white" hover={hover}></Explore>
+        <Explore text="Read More" color="white" hovercolor="white"></Explore>
       </div>
     </motion.div>
   );

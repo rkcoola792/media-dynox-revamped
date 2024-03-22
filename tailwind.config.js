@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         mainred: "#ff002e",
+        secondaryRed: "#ff4242",
       },
       fontFamily: {
         outfit: ["Outfit"],
