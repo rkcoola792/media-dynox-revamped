@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Explore from "../Explore/Explore";
 const Blog = ({date,heading,subheading,img}) => {
+  const [grayscale,setGrayScale]=useState(true)
+  console.log(grayscale)
   return (
-    <div className="blog flex gap-6 rounded-lg justify-evenly shadow-blog-shadow p-12 cursor-pointer border border-white hover:border hover:border-red-400 transition duration-300 ease-out hover:ease-in ">
+    <div
+      className="blog flex gap-6 rounded-lg justify-evenly shadow-blog-shadow p-12 cursor-pointer border border-white hover:border hover:border-red-400 transition duration-300 ease-out hover:ease-in "
+      onMouseEnter={() => setGrayScale(false)}
+      onMouseLeave={() => setGrayScale(true)}
+    >
       <div className="left date w-[15%]">
         <p className="text-xl"> March 21, 2024</p>
       </div>
@@ -18,11 +24,15 @@ const Blog = ({date,heading,subheading,img}) => {
           </p>
         </div>
 
-        <div className="bottom">
+        <div className="">
           <Explore text="Read more"></Explore>
         </div>
       </div>
-      <div className="right image">
+      <div
+        className={`right-image grayscale${
+          grayscale ? "" : "-0"
+        } transition duration-500 ease-out hover:ease-linear  `}
+      >
         <img
           src="/public/Blog/blog-1.jpg"
           alt="blog"

@@ -6,13 +6,18 @@ import Explore from "../Explore/Explore";
 
 const Section2 = () => {
   return (
-    <div className="relative">
-      <div className="bg-gray-100 sm:h-[500px] px-8  w-screen sm:flex sm:flex-row  lg:gap-12 sm:gap-6  md:gap-8 lg:px-24 sm:px-12  py-24 sm:py-0 flex flex-col items-center justify-center gap-8 mt-12 z-10  ">
+    <div className="relative ">
+      <div className="bg-gray-100 sm:h-[500px] px-8  w-screen sm:flex sm:flex-row  lg:gap-12 sm:gap-6  md:gap-8 lg:px-24 sm:px-12  py-24 sm:py-0 flex flex-col items-center justify-center gap-8 mt-20 z-10  ">
         <motion.div
-          className=" py-4 px-2 circle bg-mainred lg:h-[330px] lg:w-[330px] sm:h-[230px] sm:w-[230px] rounded-[50%] text-white flex justify-center items-center text-center hover:bg-[#222] h-[300px] w-[300px] transition duration-450 ease-out hover:ease-in cursor-pointer relative z-40 "
+          className=" py-4 px-2 circle bg-mainred lg:h-[330px] lg:w-[330px] sm:h-[230px] sm:w-[230px] rounded-[50%] text-white flex justify-center items-center text-center hover:bg-[#222] h-[300px] w-[300px] transition duration-200 ease-linear hover:ease-linear cursor-pointer relative z-40 "
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          whileHover={{
+            y: -15,
+            boxShadow: "0px 30px 40px -13px rgba(0,0,0,0.65)",
+          }}
+          // transition={{ duration: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.1 }}
         >
           <motion.div
             className="sm:p-2 "
@@ -65,9 +70,7 @@ const Section2 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="to-hide-circle bg-slate-100 h-1/2 w-full bottom-0  absolute z-20">
-
-      </div>
+      <div className="to-hide-circle bg-slate-100 h-1/2 w-full bottom-0  absolute z-20"></div>
     </div>
   );
 };
