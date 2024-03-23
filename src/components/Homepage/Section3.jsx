@@ -7,7 +7,7 @@ import Cards from "../Cards/Cards";
 
 const Section3 = () => {
   return (
-    <div className="section-3 flex flex-col items-center sm:px-24  gap-12 mt-16">
+    <div className="section-3 flex flex-col items-center sm:px-24  gap-12 mt-16 z-50 ">
       <motion.h1
         className="text-3xl text-center"
         initial={{ opacity: 0, y: 75 }}

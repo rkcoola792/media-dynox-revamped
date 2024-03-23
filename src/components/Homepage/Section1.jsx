@@ -1,13 +1,28 @@
-import React from 'react'
-import Explore from '../Explore/Explore';
-import { motion } from 'framer-motion';
-import { ExampleComponent } from '../TypeAnimation/TypeAnimation';
-import "./Section1.scss"
+import React from "react";
+import Explore from "../Explore/Explore";
+import { motion } from "framer-motion";
+import { ExampleComponent } from "../TypeAnimation/TypeAnimation";
+import "./Section1.scss";
 // import HeroCard from "
-
+import { useState, useEffect } from "react";
 const Section1 = () => {
+  const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollX = window.scrollX;
+      const scrollY = window.scrollY;
+      setCirclePosition({ x: scrollY, y: scrollY });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="hero-banner flex  items-center px-24">
+    <div className="hero-banner flex  items-center px-24 relative">
       <div className="left-details sm:w-[60%] flex flex-col text-3xl  ">
         {/* <div className="hero-heading">
         Marketing
@@ -31,7 +46,7 @@ const Section1 = () => {
           <Explore text="Explore"></Explore>
         </div>
       </div>
-      <div className="right-images flex gap-6">
+      <div className="right-images flex gap-6 z-30">
         <div className="left flex flex-col gap-6">
           <div>
             <img
@@ -56,8 +71,33 @@ const Section1 = () => {
           ></img>
         </div>
       </div>
+      {/* <div className=' circle bg-red absolute w-[350px] h-[350px] bg-red-200 rounded-[50%] right-36 -z-10'>
+
+      </div> */}
+      <div
+        style={{
+          width: "90%",
+          height: "800px",
+          position: "absolute",
+          margin: "0 0 0 10%",
+          zIndex: 20,
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: circlePosition.y + 220 + "px",
+            right: circlePosition.x + 320 + "px",
+            width: "250px",
+            height: "250px",
+            backgroundColor: "red",
+            borderRadius: "50%",
+            opacity: "50%",
+          }}
+        />
+      </div>
     </div>
   );
-}
+};
 
-export default Section1
+export default Section1;
