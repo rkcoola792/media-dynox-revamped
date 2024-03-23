@@ -7,9 +7,9 @@ import Cards from "../Cards/Cards";
 
 const Section3 = () => {
   return (
-    <div className="section-3 flex flex-col items-center sm:px-24  gap-12 mt-16 z-50 ">
+    <div className="section-3 flex flex-col items-center sm:px-24  gap-12 py-16 h-auto z-30 bg-white relative ">
       <motion.h1
-        className="text-3xl text-center"
+        className="text-3xl text-center z-30" 
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}

@@ -93,6 +93,7 @@ const Section1 = () => {
             backgroundColor: "red",
             borderRadius: "50%",
             opacity: "50%",
+            // zIndex:10
           }}
         />
       </div>
