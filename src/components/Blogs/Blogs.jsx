@@ -6,8 +6,8 @@ const Blogs = () => {
   return (
     <div className="blogs flex gap-8 relative  ">
       <div className="left relative">
-        <h1 className="lg:text-4xl sm:-ml-6 sm:text-2xl md:text-3xl text-3xl text-center sticky top-48 mb-[250px] mt-24">
-          <span className="font-semibold sm:-ml-5">Explore</span> recent Blogs
+        <h1 className="lg:text-4xl sm:-ml-6 sm:text-2xl md:text-3xl text-3xl text-left sticky top-48 mb-[250px] mt-24">
+          <span className="font-semibold ">Explore</span> recent Blogs
           for a view
         </h1>
       </div>
