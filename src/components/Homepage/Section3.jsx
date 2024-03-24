@@ -27,7 +27,7 @@ const Section3 = () => {
         the right people, at the right time with innovative strategies that are
         built for your
       </motion.h3>
-      <div className="cards flex gap-6 flex-wrap md:flex-nowrap justify-center md:justify-normal">
+      <div className="cards flex gap-6 flex-wrap lg:flex-nowrap justify-center md:justify-center">
         <motion.div
           className="hover:bg-white"
           initial={{ opacity: 0, y: 75 }}
