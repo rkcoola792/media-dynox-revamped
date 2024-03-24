@@ -28,10 +28,10 @@ const Section1 = () => {
         Marketing
       </div>heading */}
         <div className="title flex flex-col gap-2 justify-between  ">
-          <div className="typewriter lg:text-6xl md:text-3xl  text-3xl font-bold text-mainred">
+          <div className="typewriter lg:text-6xl md:text-5xl sm:text-4xl  text-3xl font-bold text-mainred">
             <ExampleComponent></ExampleComponent>
           </div>
-          <h1 className="lg:text-6xl md:text-3xl  text-3xl font-bold">
+          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl  text-3xl font-bold">
             <span className="font-bold  text-black stroke-red-600 with">
               With
             </span>{" "}
@@ -46,20 +46,20 @@ const Section1 = () => {
           <Explore text="Explore"></Explore>
         </div>
       </div>
-      <div className="right-images flex gap-6 z-30">
+      <div className="right-images flex gap-6 z-30 mt-12">
         <div className="left flex flex-col gap-6">
           <div>
             <img
               src="/public/Hero/hero1.jpg"
               alt=""
-              className="h-[220px] w-[220px] rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[180px] sm:w-[180px] rounded-lg shadow-lg object-cover"
             ></img>
           </div>
           <div>
             <img
               src="/public/Hero/hero3.jpg"
               alt=""
-              className="h-[220px] w-[220px] rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[180px] sm:w-[180px] rounded-lg shadow-lg object-cover"
             ></img>
           </div>
         </div>
@@ -67,33 +67,28 @@ const Section1 = () => {
           <img
             src="/public/Hero/hero2.jpg"
             alt=""
-            className="h-[220px] w-[220px] rounded-lg shadow-lg object-cover"
+            className="lg:h-[220px] lg:w-[220px] sm:h-[180px] sm:w-[180px] rounded-lg shadow-lg object-cover"
           ></img>
         </div>
       </div>
-      {/* <div className=' circle bg-red absolute w-[350px] h-[350px] bg-red-200 rounded-[50%] right-36 -z-10'>
-
-      </div> */}
+    
       <div
+        className="circle lg:w-[90%] lg:h-[800px] h-[800px] w-[100%] lg:ml-28 md:mt-20 md:ml-12"
         style={{
-          width: "90%",
-          height: "800px",
           position: "absolute",
-          margin: "0 0 0 10%",
+          // margin: "0 0 0 10%",
           zIndex: 20,
         }}
       >
         <div
+          className={`circle-actual lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] `}
           style={{
             position: "absolute",
-            top: circlePosition.y + 220 + "px",
+            top: circlePosition.y + 250 + "px",
             right: circlePosition.x + 320 + "px",
-            width: "250px",
-            height: "250px",
             backgroundColor: "red",
             borderRadius: "50%",
             opacity: "50%",
-            // zIndex:10
           }}
         />
       </div>

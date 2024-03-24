@@ -70,7 +70,7 @@ const Section2 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="to-hide-circle bg-slate-100 h-1/2 w-full bottom-0  absolute z-20"></div>
+      <div className="to-hide-circle bg-slate-100 lg:h-1/2 h-[60%] w-full bottom-0  absolute z-20"></div>
     </div>
   );
 };
