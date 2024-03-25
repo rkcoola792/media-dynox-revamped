@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Section6.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import BreakThrough from "../BreakThrough/BreakThrough";
 
 const items = [
   {
@@ -41,41 +42,7 @@ const items = [
     },
 ];
 
-const Single = ({ item }) => {
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-825, 600]);
-
-  return (
-    <section>
-      <motion.div
-        id="Portfolio"
-        className="container pb-12"
-        initial={{ y: 75, opacity: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <div className="wrapper">
-          <div className="image" ref={ref}>
-            <img src={item.img} alt="" className="" />
-          </div>
-          <div className="textContainer" style={{ y }}>
-            <h2 className="hover:text-orange-400 cursor-pointer">
-              {item.title}
-            </h2>
-            <p className="">{item.desc}</p>
-            <a href={item.link}>
-              <button>See Demo </button>
-            </a>
-          </div>
-        </div>
-      </motion.div>
-    </section>
-  );
-};
+// 
 
 const Portfolio = () => {
   const ref = useRef();
@@ -89,8 +56,8 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio h-full bg-white py-12" ref={ref}>
-      <div className="progress ">
+    <div className="portfolio h-full bg-white px-24 " ref={ref}>
+      <div className="progress z-50">
         <h1 className="text-3xl sm:text-4xl font-normal bg-white pt-12">
           <span className="font-semibold">Break Through the Boring,</span> One
           Step At A Time
@@ -102,9 +69,17 @@ const Portfolio = () => {
         </p>
         <motion.div className="progressBar " style={{ scaleX }}></motion.div>
       </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id}></Single>
-      ))}
+      <div className=" bottom-div flex flex-wrap justify-center mt-24 gap-12  ">
+        {items.map((item) => (
+          <div className="w-[45%]">
+            <BreakThrough
+              heading={item.heading}
+              subheading={item.subheading}
+              step={item.step}
+            ></BreakThrough>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
