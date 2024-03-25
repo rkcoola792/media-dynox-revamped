@@ -20,11 +20,14 @@ const Homepage = () => {
     <div className="homepage">
       <motion.div className="progress-bar" style={{ scaleX }} />
       {/* <ProgressBar></ProgressBar> */}
+
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>
       <Section5></Section5>
-      <Section6></Section6>
+      <section>
+        <Section6></Section6>
+      </section>
       <Section8></Section8>
       <Section9></Section9>
     </div>
