@@ -9,6 +9,7 @@ import ProgressBar from '../ProgressBar/ProgressBar'
 import { motion, useScroll, useSpring } from "framer-motion";
 import "./progressbar.scss"
 import Section6 from './Section6'
+import Section4 from './Section4'
 const Homepage = () => {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
@@ -24,6 +25,7 @@ const Homepage = () => {
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>
+      <Section4></Section4>
       <Section5></Section5>
       <section>
         <Section6></Section6>

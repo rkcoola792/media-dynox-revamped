@@ -56,8 +56,8 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio h-full bg-white px-24 " ref={ref}>
-      <div className="progress z-50">
+    <div className="portfolio h-full bg-white px-24 pb-8" ref={ref}>
+      <div className="progress z-50 bg-white ">
         <h1 className="text-3xl sm:text-4xl font-normal bg-white pt-12">
           <span className="font-semibold">Break Through the Boring,</span> One
           Step At A Time
@@ -69,7 +69,7 @@ const Portfolio = () => {
         </p>
         <motion.div className="progressBar " style={{ scaleX }}></motion.div>
       </div>
-      <div className=" bottom-div flex flex-wrap justify-center mt-24 gap-12  ">
+      <div className=" bottom-div flex flex-wrap justify-center mt-24 gap-12 ml-12 ">
         {items.map((item) => (
           <div className="w-[45%]">
             <BreakThrough
