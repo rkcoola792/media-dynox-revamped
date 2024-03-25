@@ -4,11 +4,11 @@
 
   .progress {
     position: sticky;
-    top: 100px;
+    top: 40px;
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    // color: ;
     font-size: 24px;
 
     // @include mobile{
@@ -17,7 +17,7 @@
 
 
     .progressBar {
-      margin-top: 10px;
+    //   margin-top: 10px;
       height: 8px;
       background-color: red;
     }

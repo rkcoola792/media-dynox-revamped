@@ -4,40 +4,41 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
-    id: 1,
-    title: "Media Dynox",
-    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: `Engage visitors with our dynamic React and Framer Motion powered landing page. Experience smooth animations, captivating visuals, and seamless navigation. Explore our innovative features, crafted for your needs. Join us on a journey of innovation and creativity.`,
-    link: "https://media-dynox-ajij-eosin.vercel.app/",
+    step: "1",
+    heading: "Audit",
+    subheading:
+      "A 360° study of the project that gives equal consideration to your and your product’s end users’ expectations.",
   },
-  {
-    id: 2,
-    title: "Netflix-GPT",
-    img: "https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Netflix like app which uses OPEN AI APIs to suggest movies.The project uses React, tailwind CSS, Firebase APIs and Redux Toolkit.It is a fully mobile responsive and multilingual application.Implements authentication feature as well ",
-    link: "https://netflix-gpt-delta-topaz.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Youtube",
-    img: "https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Developed a highly scalable and fast video streaming platform inspired from youtube.The project used React, tailwind CSS,  and Redux Toolkit. Optimised search feature with debouncing and live chat feature.",
-    link: "https://namaste-youtube-99ta.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "Chat App",
-    img: "https://images.pexels.com/photos/5053740/pexels-photo-5053740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "It is a real time chat application made using React and vanilla css with the help of firebase APIs for different features like authentication (JWT), storing chats data, user info and more.",
-    link: "https://chat-app-d0f9e.firebaseapp.com",
-  },
-  {
-    id: 5,
-    title: "Ecommerce App",
-    img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: `A fullstack ecommerce website (Meevea Store) which uses MERN (mongoDb,Express,React,NodeJs) redux-toolkit, tailwind, MUI and Stripe for payment gateway.  Project in Progress`,
-    link: "https://github.com/rkcoola792/Ecommerce-Meveea-Store-",
-  },
+    {
+      step: "2",
+      heading: "Enact",
+      subheading:
+        "Getting hands-on with the plans to develop a stellar product that stands the test of time.",
+    },
+    {
+      step: "3",
+      heading: "  Brush Up",
+      subheading:
+        "Regular maintenance checks and amendments to eliminate possible hurdles and polish the existing product to fulfill the scope of improvement.",
+    },
+    {
+      step: "4",
+      heading: "Brainstorm",
+      subheading:
+        "Aligning the goals, resources, and market trends in a harmonious symphony for a smooth development journey.",
+    },
+    {
+      step: "5",
+      heading: "Launch & Broadcast",
+      subheading:
+        "Sharing the final product with end users, evaluating user behavior, and monitoring progress.",
+    },
+    {
+      step: "6",
+      heading: "Nourish",
+      subheading:
+        "Ensuring the product works like a well-oiled machine by conducting regular maintenance.",
+    },
 ];
 
 const Single = ({ item }) => {
@@ -88,9 +89,17 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio" ref={ref}>
-      <div className="progress">
-        <h1 className="text-3xl sm:text-5xl">Featured Works</h1>
+    <div className="portfolio h-full bg-white py-12" ref={ref}>
+      <div className="progress ">
+        <h1 className="text-3xl sm:text-4xl font-normal bg-white pt-12">
+          <span className="font-semibold">Break Through the Boring,</span> One
+          Step At A Time
+        </h1>
+        <p className="text-sm  bg-white py-8   ">
+          Grand experiences can be divided into multiple small ones. Our
+          simplified 6-step procedure ensures that your business becomes a grand
+          experience for you.
+        </p>
         <motion.div className="progressBar " style={{ scaleX }}></motion.div>
       </div>
       {items.map((item) => (
