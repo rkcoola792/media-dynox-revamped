@@ -22,7 +22,7 @@ const Section1 = () => {
     };
   }, []);
   return (
-    <div className="hero-banner flex  items-center px-24 relative">
+    <div className="hero-banner flex  items-center lg:px-24 px-12 relative">
       <div className="left-details sm:w-[60%] flex flex-col text-3xl  ">
         {/* <div className="hero-heading">
         Marketing
@@ -52,14 +52,14 @@ const Section1 = () => {
             <img
               src="/public/Hero/hero1.jpg"
               alt=""
-              className="lg:h-[220px] lg:w-[220px] sm:h-[180px] sm:w-[180px] rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w rounded-lg shadow-lg object-cover"
             ></img>
           </div>
           <div>
             <img
               src="/public/Hero/hero3.jpg"
               alt=""
-              className="lg:h-[220px] lg:w-[220px] sm:h-[180px] sm:w-[180px] rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] rounded-lg shadow-lg object-cover"
             ></img>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Section1 = () => {
           <img
             src="/public/Hero/hero2.jpg"
             alt=""
-            className="lg:h-[220px] lg:w-[220px] sm:h-[180px] sm:w-[180px] rounded-lg shadow-lg object-cover"
+            className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] rounded-lg shadow-lg object-cover"
           ></img>
         </div>
       </div>

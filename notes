@@ -11,3 +11,7 @@ transition duration-200 ease-out hover:ease-in */
 /* for practice */
  /* mainred: "#ff002e",
         secondaryRed: "#ff4242", */
+
+    /* px-24 for lg and greater
+
+    px-12 for below lg */

@@ -31,7 +31,7 @@ const Header = () => {
     <>
       <div id="progress-bar" className="progress-bar " style={{ scaleX }}></div>
 
-      {mobileHeader && (
+      {/* {mobileHeader && (
         <motion.div
           className="mobile-header fixed md:hidden h-screen z-30 bg-slate-100 w-[80%] sm:w-[50%] shadow-lg"
           initial={{ x: -30, opacity: 0 }}
@@ -93,9 +93,9 @@ const Header = () => {
             </h1>
           </div>
         </motion.div>
-      )}
+      )} */}
 
-      <div className="header flex justify-between  py-8 items-center sticky top-0 bg-slate-50 z-50 px-24 ">
+      <div className="header flex justify-between  py-8 items-center sticky top-0 bg-slate-50 z-50 lg:px-24 px-12">
         <div className="left logo font-bold sm:text-xl lg:text-3xl cursor-pointer">
           Media Dynox
           <span className="text-mainred font-bold text-2xl lg:text-3xl ">
