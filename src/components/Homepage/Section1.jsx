@@ -91,6 +91,8 @@ const Section1 = () => {
           }}
         />
       </div>
+
+      <div className="mobile-circle sm:hidden bg-red-400 w-60 h-60 rounded-[50%] absolute bottom-32"></div>
     </div>
   );
 };
