@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer/Footer";
 // import Test from "./components/Test/Test";
 import  Marketing from "./components/Marketing/Marketing.jsx"
+import { ShiftingDropDown } from "./components/HeaderNew/HeaderNew.jsx";
 // import Scrollbar from "smooth-scrollbar";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     return (
       <div className="my-scrollbar">
           <Header></Header>
+          {/* <ShiftingDropDown></ShiftingDropDown> */}
         <div className="body-outlet ">
           <Outlet></Outlet>
         </div>

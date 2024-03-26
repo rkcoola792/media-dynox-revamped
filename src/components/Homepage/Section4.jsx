@@ -4,16 +4,16 @@ import FAQ from '../FAQ/FAQ'
 
 const Section4 = () => {
   return (
-    <div className="left section-4 md:flex sm:px-24 px-8 bg-slate-100  py-24 mt-12 relative ">
+    <div className="left section-4 md:flex flex flex-col md:flex-row lg:px-24 px-12  bg-slate-100  py-24 mt-12 relative ">
       <div className="sticky top-48 w-[50%]">
         <motion.div
-          className="left w-[65%] text-center md:text-left flex flex-col gap-8 sticky top-48"
+          className="left lg:w-[65%] text-center md:text-left flex flex-col gap-8 sticky top-48 justify-center items-center"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <motion.h1
-            className="xl:text-3xl sm:text-2xl lg:text-3xl leading-10 text-3xl "
+            className="xl:text-3xl sm:text-2xl lg:text-3xl leading-10 text-3xl   "
             initial={{ opacity: 0, y: 75 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}

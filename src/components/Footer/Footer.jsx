@@ -114,7 +114,7 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      <div className="right sm:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12  ">
+      <div className="right md:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12  ">
         <motion.div
           className="top flex flex-col gap-2 "
           initial={{ opacity: 0, y: 75 }}
@@ -130,10 +130,10 @@ const Footer = () => {
             <hr />
           </div>
           <div className="ctas lg:flex flex-wrap sm:-translate-x-3">
-            <div className="md:scale-90 scale-125 px-8 sm:px-0 mt-0">
+            <div className="md:scale-90 scale-125 px-12 sm:px-20 md:px-0 mt-0 p">
               <Explore text="Contact Us" size="sm"></Explore>
             </div>
-            <div className="mt-0 md:scale-90 scale-125 px-8 sm:px-0 lg:-translate-x-[2px]">
+            <div className="mt-0 md:scale-90 scale-125 px-12 lg:-translate-x-[2px]  sm:px-20 md:px-0">
               <Explore text="Schedule a meeting" size="sm"></Explore>
             </div>
           </div>
@@ -144,7 +144,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <p className="text-gray-700 lg:text-sm sm:text-xs sm:leading-6 mt-6 md:w-[80%] lg:w-[90%] xl:w-[80%] lg:leading-7 leading-7">
+          <p className="text-gray-700 lg:text-sm  sm:text-xs sm:leading-6 mt-6 w-[70%] md:w-[80%] lg:w-[90%] xl:w-[80%] lg:leading-7 leading-7 ">
             Welcome to our digital agency. We specialize in helping business
             most like your succeed online. From website design and development.
           </p>
