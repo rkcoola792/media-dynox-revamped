@@ -7,7 +7,7 @@ const Cards = ({ title, first, second, third, fourth, color }) => {
   const [hover, setHover] = useState(false);
   return (
     <motion.div
-      className=" w-[320px] sm:w-[200px] xl:w-[250px] md:w-[350px]  flex flex-col  gap-6 border border-gray-300 px-8 py-8 cursor-pointer hover:bg-mainred hover:text-white transition duration-150 ease-out hover:ease-linear rounded-lg  "
+      className=" w-[300px]  xl:w-[250px] md:w-[350px]  flex flex-col  gap-6 border border-gray-300 px-8 py-8 cursor-pointer hover:bg-mainred hover:text-white transition duration-150 ease-out hover:ease-linear rounded-lg  "
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       initial={{ y: 0 }}

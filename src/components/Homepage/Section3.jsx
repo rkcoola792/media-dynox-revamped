@@ -7,7 +7,7 @@ import Cards from "../Cards/Cards";
 
 const Section3 = () => {
   return (
-    <div className="section-3 flex flex-col items-center sm:px-24  gap-12 py-16 h-auto z-30 bg-white relative ">
+    <div className="section-3 flex flex-col items-center lg:px-24 px-12 gap-12 py-16 h-auto z-30 bg-white relative ">
       <motion.h1
         className="text-3xl text-center z-30" 
         initial={{ opacity: 0, y: 75 }}
@@ -17,7 +17,7 @@ const Section3 = () => {
         <span className="font-bold">Explore services </span> that we offer
       </motion.h1>
       <motion.h3
-        className="sm:w-[80%] text-center text-gray-600 text-base leading-7"
+        className="lg:w-[80%] text-center text-gray-600 text-base leading-7"
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
