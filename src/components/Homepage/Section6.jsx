@@ -71,7 +71,7 @@ const Portfolio = () => {
       </div>
       <div className=" bottom-div flex flex-wrap justify-center mt-24 gap-12 sm:ml-12 ">
         {items.map((item) => (
-          <div className="sm:w-[45%]">
+          <div className="lg:w-[45%] ">
             <BreakThrough
               heading={item.heading}
               subheading={item.subheading}

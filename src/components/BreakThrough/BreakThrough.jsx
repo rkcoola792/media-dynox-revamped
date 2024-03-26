@@ -21,7 +21,7 @@ const BreakThrough = ({step,heading,subheading}) => {
         </motion.div>
 
         <motion.div
-          className="right-div  flex flex-col gap-4  mt-2 w-[60%]"
+          className="right-div  flex flex-col gap-4  mt-[14px] w-[60%]"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.1  }}

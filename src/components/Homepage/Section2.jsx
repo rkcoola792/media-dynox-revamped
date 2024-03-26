@@ -34,7 +34,7 @@ const Section2 = () => {
         </motion.div>
 
         <motion.div
-          className="mid-details flex items-start flex-col lg:gap-6 sm:gap-3  w-[300px] gap-4 z-40"
+          className="mid-details flex items-start flex-col lg:gap-6 sm:gap-3  w-[300px] gap-4 z-40 -ml-12 sm:ml-0"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -52,7 +52,7 @@ const Section2 = () => {
         </motion.div>
 
         <motion.div
-          className="right-details flex flex-col items-start lg:gap-6 sm:gap-3 sm:w-[300px] pl-4 gap-4 z-40
+          className="right-details flex flex-col items-start lg:gap-6 sm:gap-3 sm:w-[300px] pl-4 gap-4 z-40 -ml-4 sm:ml-0
        "
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
