@@ -22,7 +22,7 @@ const Section1 = () => {
     };
   }, []);
   return (
-    <div className="hero-banner flex  items-center lg:px-24 px-12 relative">
+    <div className="hero-banner flex  items-center lg:px-24 px-8  relative">
       <div className="left-details sm:w-[60%] flex flex-col text-3xl  ">
         {/* <div className="hero-heading">
         Marketing
