@@ -21,7 +21,7 @@ const Footer = () => {
     >
       <div className="left bg-[#131111] md:w-[70%] pb-24 mt-2">
         <motion.div
-          className="top sm:flex lg:gap-[60px] gap-8  justify-center sm:pt-24  py-1 lg:px-24 px-12"
+          className="top sm:flex lg:gap-[60px] gap-8  justify-center sm:pt-24  py-1 lg:px-24 sm:px-12 px-8"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -129,7 +129,7 @@ const Footer = () => {
           <div className="hr border border-b-black mt-1  w-[70%]">
             <hr />
           </div>
-          <div className="ctas lg:flex flex-wrap sm:-translate-x-3">
+          <div className="ctas lg:flex flex-wrap sm:-translate-x-3 -translate-x-4">
             <div className="md:scale-90 scale-125 px-12 sm:px-20 md:px-0 mt-0 p">
               <Explore text="Contact Us" size="sm"></Explore>
             </div>
@@ -159,16 +159,16 @@ const Footer = () => {
             Follow Us <span className="text-mainred">.</span>
           </h1>
           <div className="social-icons flex sm:gap-2 -translate-x-1 mt-4 ml-1  gap-5">
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-75 scale-150">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-75 scale-120">
               <XIcon></XIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-150">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-120">
               <FacebookIcon></FacebookIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-150">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-120">
               <LinkedInIcon></LinkedInIcon>
             </div>
-            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-150">
+            <div className="hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer sm:scale-90 scale-120">
               <InstagramIcon></InstagramIcon>
             </div>
           </div>

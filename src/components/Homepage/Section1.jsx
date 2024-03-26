@@ -58,7 +58,7 @@ const Section1 = () => {
             <img
               src="/public/Hero/hero3.jpg"
               alt=""
-              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w-[150px] h-[150px] rounded rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w-[150px] h-[150px] rounded-lg shadow-lg object-cover"
             ></img>
           </div>
         </div>
