@@ -57,7 +57,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio h-full bg-white px-24 pb-8" ref={ref}>
-      <div className="progress z-50 bg-white ">
+      <div className="progress z-40 bg-white ">
         <h1 className="text-3xl sm:text-4xl font-normal bg-white pt-12">
           <span className="font-semibold">Break Through the Boring,</span> One
           Step At A Time

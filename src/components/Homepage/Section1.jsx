@@ -71,7 +71,7 @@ const Section1 = () => {
           ></img>
         </div>
       </div>
-    
+
       <div
         className="circle lg:w-[90%] lg:h-[800px] h-[800px] w-[100%] lg:ml-28 md:mt-20 md:ml-12"
         style={{
@@ -81,11 +81,11 @@ const Section1 = () => {
         }}
       >
         <div
-          className={`circle-actual lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] `}
+          className={`circle-actual lg:w-[310px] lg:h-[310px] md:w-[200px] md:h-[200px] `}
           style={{
             position: "absolute",
-            top: circlePosition.y + 250 + "px",
-            right: circlePosition.x + 320 + "px",
+            top: circlePosition.y + 190 + "px",
+            right: circlePosition.x + 300 + "px",
             backgroundColor: "red",
             borderRadius: "50%",
             opacity: "50%",

@@ -5,7 +5,7 @@ import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer/Footer";
 // import Test from "./components/Test/Test";
 import  Marketing from "./components/Marketing/Marketing.jsx"
-import Scrollbar from "smooth-scrollbar";
+// import Scrollbar from "smooth-scrollbar";
 
 function App() {
   // Scrollbar.init(document.querySelector("body"));
