@@ -56,22 +56,22 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio h-full bg-white px-24 pb-8" ref={ref}>
+    <div className="portfolio h-full bg-white lg:px-24 px-8 sm:px-12 pb-8" ref={ref}>
       <div className="progress z-40 bg-white ">
         <h1 className="text-3xl sm:text-4xl font-normal bg-white pt-12">
           <span className="font-semibold">Break Through the Boring,</span> One
           Step At A Time
         </h1>
-        <p className="text-sm  bg-white py-8   ">
+        <p className="text-sm  bg-white py-8 text-gray-700 leading-6  ">
           Grand experiences can be divided into multiple small ones. Our
           simplified 6-step procedure ensures that your business becomes a grand
           experience for you.
         </p>
         <motion.div className="progressBar " style={{ scaleX }}></motion.div>
       </div>
-      <div className=" bottom-div flex flex-wrap justify-center mt-24 gap-12 ml-12 ">
+      <div className=" bottom-div flex flex-wrap justify-center mt-24 gap-12 sm:ml-12 ">
         {items.map((item) => (
-          <div className="w-[45%]">
+          <div className="sm:w-[45%]">
             <BreakThrough
               heading={item.heading}
               subheading={item.subheading}
