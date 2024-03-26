@@ -14,20 +14,20 @@ import Explore from "../Explore/Explore";
 const Footer = () => {
   return (
     <motion.div
-      className="footer mt-32 sm:h-[500px] sm:flex w-svw "
+      className="footer mt-32 sm:h-[500px] md:flex w-svw "
       initial={{ opacity: 0, y: 75 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.1 }}
     >
-      <div className="left bg-[#131111] sm:w-[70%] pb-24">
+      <div className="left bg-[#131111] md:w-[70%] pb-24 mt-2">
         <motion.div
-          className="top sm:flex lg:gap-[90px] sm:gap-12 justify-center sm:pt-24 px-8 py-1"
+          className="top sm:flex lg:gap-[60px] gap-8  justify-center sm:pt-24  py-1 lg:px-24 px-12"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div>
-            <h1 className="lg:text-3xl sm:text-2xl sm:hidden lg:block font-semibold text-white mt-20 text-4xl">
+            <h1 className="lg:text-3xl sm:text-2xl  lg:block font-semibold text-white mt-20 text-4xl">
               MediaDynox<span className="font-bold text-mainred">.</span>
             </h1>
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="contact flex flex-col w-[250px]">
-            <h1 className="text-white sm:text-xl mb-6 text-3xl">Contact</h1>
+            <h1 className="text-white sm:text-2xl text-3xl mb-6">Contact</h1>
             <div className="contact-elements flex flex-col sm: gap-2">
               <div className="address flex gap-2 ">
                 <div className="text-mainred opacity-70 hidden sm:block">
