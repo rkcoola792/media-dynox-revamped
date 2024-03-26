@@ -19,7 +19,7 @@ const Section9 = () => {
     >
       <img src="/cta-banner.png" alt="" className="h-[200px] sm:h-full " />
       <motion.h1
-        className="absolute top-[20%] md:text-5xl sm:text-3xl  text-white text-center lg:top-28 sm:top-20 sm:leading-[70px] sm:w-[50%] font-thin text-3xl w-[80%]"
+        className="absolute top-[20%] md:text-4xl sm:text-2xl lg:text-5xl text-white text-center lg:top-28 sm:top-20 lg:leading-[50px] sm:w-[50%] font-thin text-3xl w-[80%] px-8 md:px-0"
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}

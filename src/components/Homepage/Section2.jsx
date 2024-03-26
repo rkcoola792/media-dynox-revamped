@@ -25,7 +25,7 @@ const Section2 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h1 className="lg:text-2xl xl:text-3xl sm:text-lg z-30  p-6 px-8 text-2xl leading-9 ml-1 hover:text-white transition duration-200 ease-linear hover:ease-linear">
+            <h1 className="lg:text-2xl xl:text-3xl sm:text-lg z-30   px-8 text-2xl leading-9 ml-1 hover:text-white transition duration-200 ease-linear hover:ease-linear">
               <span className="font-bold">We are creators.</span> The
               masterminds behind{" "}
               <span className="font-bold">great innovations.</span>
