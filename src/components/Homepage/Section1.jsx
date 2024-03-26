@@ -22,12 +22,9 @@ const Section1 = () => {
     };
   }, []);
   return (
-    <div className="hero-banner flex  items-center lg:px-24 px-8  relative">
+    <div className="hero-banner sm:flex sm:flex-row sm:items-center lg:px-24 px-8 sm:relative flex flex-col items-center text-center sm:text-left pt-12 sm:pt-0">
       <div className="left-details sm:w-[60%] flex flex-col text-3xl  ">
-        {/* <div className="hero-heading">
-        Marketing
-      </div>heading */}
-        <div className="title flex flex-col gap-2 justify-between  ">
+        <div className="title flex flex-col gap-2 justify-between ">
           <div className="typewriter lg:text-6xl md:text-5xl sm:text-4xl  text-3xl font-bold text-mainred">
             <ExampleComponent></ExampleComponent>
           </div>
@@ -38,12 +35,14 @@ const Section1 = () => {
             Media Dynox<span className="text-mainred">.</span>
           </h1>
         </div>
-        <div className="subheading w-[70%]">
-          <div className="hero-subheading my-8 text-lg opacity-95 text-gray-600  ">
+        <div className="subheading sm:w-[70%] w-full ">
+          <div className="hero-subheading my-8 text-lg opacity-95 text-gray-600 text-center sm:text-left ">
             Lorem ipsum is simply dummy text of printing and typesetting
             industry.
           </div>
-          <Explore text="Explore"></Explore>
+          <div className="ml-[32%] sm:ml-0">
+            <Explore text="Explore"></Explore>
+          </div>
         </div>
       </div>
       <div className="right-images flex gap-6 z-30 mt-12">
@@ -52,14 +51,14 @@ const Section1 = () => {
             <img
               src="/public/Hero/hero1.jpg"
               alt=""
-              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w-[150px] h-[150px] rounded-lg shadow-lg object-cover"
             ></img>
           </div>
           <div>
             <img
               src="/public/Hero/hero3.jpg"
               alt=""
-              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] rounded-lg shadow-lg object-cover"
+              className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w-[150px] h-[150px] rounded rounded-lg shadow-lg object-cover"
             ></img>
           </div>
         </div>
@@ -67,7 +66,7 @@ const Section1 = () => {
           <img
             src="/public/Hero/hero2.jpg"
             alt=""
-            className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] rounded-lg shadow-lg object-cover"
+            className="lg:h-[220px] lg:w-[220px] sm:h-[150px] sm:w-[150px] w-[150px] h-[150px]  rounded-lg shadow-lg object-cover"
           ></img>
         </div>
       </div>
