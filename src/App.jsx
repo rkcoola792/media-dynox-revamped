@@ -18,6 +18,7 @@ import Blogs from "./components/Blogs/Blogs.jsx";
 import ReachUS from "./components/Pages/ReachUs/ReachUS.jsx";
 import Work from "./components/Pages/Company/Work/Work.jsx";
 import Career from "./components/Pages/Company/Career/Career.jsx";
+import Contact from "./components/ContactUs/ContactUs.jsx";
 // import Scrollbar from "smooth-scrollbar";
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         { path: "/blogs", element: <Blogs/> },
         { path: "/reach-us", element: <ReachUS/> },
         { path: "/reach-career", element: <Career/> },
+        { path: "/contact", element: <Contact/> },
        
       ],
     },
