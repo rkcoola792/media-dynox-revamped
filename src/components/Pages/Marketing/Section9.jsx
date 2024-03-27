@@ -1,7 +1,8 @@
 import React from 'react'
 import SectionFiveElement from './SectionFiveElement';
-import { Item } from '../Dropdown/Dropdown';
+
 import { motion } from 'framer-motion';
+import { Item } from '../../Dropdown/Dropdown';
 
 const Section10 = () => {
   return (

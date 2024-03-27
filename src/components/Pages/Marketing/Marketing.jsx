@@ -5,12 +5,13 @@ import Section3 from './Section3'
 import Section4 from './Section4'
 import Section5 from './Section5'
 import Section6 from './Section6'
-import Section9 from '../Homepage/Section9'
+
 import Section7 from './Section7'
 import Section10 from './Section9'
-import Section8 from '../Homepage/Section8'
+import Section8 from '../../Homepage/Section8'
 import {motion} from "framer-motion"
-import MoveTop from '../Movetop/Movetop'
+import MoveTop from '../../Movetop/Movetop'
+import Section9 from '../../Homepage/Section9'
 
 const Marketing = () => {
   return (

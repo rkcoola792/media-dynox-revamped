@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import Step from "../Step/Step.jsx"
+
 import React from 'react'
+import Step from '../../Step/Step';
 
 const Section4 = () => {
     const steps = [
