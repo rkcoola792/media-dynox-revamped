@@ -10,6 +10,9 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import "./progressbar.scss"
 import Section6 from './Section6'
 import Section4 from './Section4'
+
+import MoveTop from '../Movetop/Movetop'
+// import Circle from '../Test/Test'
 const Homepage = () => {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
@@ -23,6 +26,7 @@ const Homepage = () => {
       {/* <ProgressBar></ProgressBar> */}
 
       <Section1></Section1>
+      <MoveTop></MoveTop>
       <Section2></Section2>
       <Section3></Section3>
       <Section4></Section4>
@@ -32,6 +36,7 @@ const Homepage = () => {
       </section>
       <Section8></Section8>
       <Section9></Section9>
+      {/* <Circle></Circle> */}
     </div>
   );
 }

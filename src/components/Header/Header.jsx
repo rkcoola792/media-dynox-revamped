@@ -31,9 +31,9 @@ const Header = () => {
     <>
       <div id="progress-bar" className="progress-bar " style={{ scaleX }}></div>
 
-      {/* {mobileHeader && (
+      {mobileHeader && (
         <motion.div
-          className="mobile-header fixed md:hidden h-screen z-30 bg-slate-100 w-[80%] sm:w-[50%] shadow-lg"
+          className="mobile-header fixed md:hidden h-screen z-[100] bg-gray-100 w-[70%] sm:w-[50%] shadow-lg transition duration-200 ease-linear hover:ease-linear"
           initial={{ x: -30, opacity: 0 }}
           animate={{
             x: 0,
@@ -43,7 +43,7 @@ const Header = () => {
         >
           <div className="right-header-elements  flex flex-col gap-6 p-8 items-left text-2xl">
             <Link to="/">
-              <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
+              <h1 className="lg:text-lg hover:text-mainred cursor-pointer font-semibold ">
                 Home
               </h1>
             </Link>
@@ -66,7 +66,7 @@ const Header = () => {
               >
                 .
               </span>
-              <div>{<Dropdown reference=""></Dropdown>}</div>
+              {/* <div>{<Dropdown reference=""></Dropdown>}</div> */}
             </div>
             <div
               className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer"
@@ -93,7 +93,7 @@ const Header = () => {
             </h1>
           </div>
         </motion.div>
-      )} */}
+      )}
 
       <div className="header flex justify-between  py-8 items-center sticky top-0 bg-slate-50 z-50 lg:px-24 px-8 sm:px-12">
         <div className="left logo font-bold sm:text-xl lg:text-3xl cursor-pointer">

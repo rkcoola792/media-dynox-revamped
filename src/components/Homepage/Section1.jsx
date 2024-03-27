@@ -80,7 +80,7 @@ const Section1 = () => {
         }}
       >
         <div
-          className={`circle-actual lg:w-[310px] lg:h-[310px] md:w-[200px] md:h-[200px] `}
+          className={`desktop-circle-actual lg:w-[310px] lg:h-[310px] md:w-[200px] md:h-[200px] `}
           style={{
             position: "absolute",
             top: circlePosition.y + 190 + "px",
@@ -92,7 +92,28 @@ const Section1 = () => {
         />
       </div>
 
-      <div className="mobile-circle sm:hidden bg-red-400 w-60 h-60 rounded-[50%] absolute bottom-32"></div>
+      <div
+        className="mobile-circle h-[40px] w-[400px]"
+        style={{
+          position: "absolute",
+          // margin: "0 0 0 10%",
+          zIndex: 20,
+        }}
+      >
+        <div
+          className={`mobile-circle sm:hidden bg-red-400 w-72 h-72 rounded-[50%] absolute top-32  `}
+          style={{
+            position: "absolute",
+            top: circlePosition.y + 300 + "px",
+            // right: circlePosition.x + 300 + "px",
+            right:"15%",
+            backgroundColor: "red",
+            borderRadius: "50%",
+            opacity: "50%",
+          }}
+        />
+      </div>
+
     </div>
   );
 };

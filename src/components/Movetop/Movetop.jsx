@@ -10,7 +10,7 @@ const MoveTop = () => {
   };
   return (
     <div
-      className="movetop fixed bottom-12 right-12 hidden z-50 sm:block cursor-pointer "
+      className="movetop fixed bottom-8 right-8 hidden z-50 sm:block cursor-pointer "
       onClick={scrollToTop}
     >
       <div className="w-16 h-16 bg-red-200 rounded-[50%] flex justify-center items-center hover:bg-mainred transition duration-700  hover:ease-in-out">
