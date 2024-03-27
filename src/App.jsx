@@ -8,14 +8,16 @@ import Footer from "./components/Footer/Footer";
 import { ShiftingDropDown } from "./components/HeaderNew/HeaderNew.jsx";
 import AboutUS from "./components/Pages/Company/AboutUS/AboutUS.jsx";
 import Team from "./components/Pages/Company/Team/Team.jsx";
-import { Work } from "@mui/icons-material";
-import Career from "./components/Pages/Career/Career.jsx";
+
+
 import Technology from "./components/Pages/Services/Design/Technology/Technology.jsx";
 import Business from "./components/Pages/Services/Business/Business.jsx";
 import Marketing from "./components/Pages/Marketing/Marketing.jsx";
 import Design from "./components/Pages/Services/Design/Design.jsx";
 import Blogs from "./components/Blogs/Blogs.jsx";
 import ReachUS from "./components/Pages/ReachUs/ReachUS.jsx";
+import Work from "./components/Pages/Company/Work/Work.jsx";
+import Career from "./components/Pages/Company/Career/Career.jsx";
 // import Scrollbar from "smooth-scrollbar";
 
 function App() {
@@ -48,6 +50,7 @@ function App() {
         { path: "/design", element: <Design/> },
         { path: "/blogs", element: <Blogs/> },
         { path: "/reach-us", element: <ReachUS/> },
+        { path: "/reach-career", element: <Career/> },
        
       ],
     },
