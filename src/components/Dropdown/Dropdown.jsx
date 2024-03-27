@@ -26,16 +26,18 @@ const Dropdown = ({ reference }) => {
 
   return (
     <div className="dropdown w-[380px] p-8 shadow-lg flex flex-col gap-8 rounded-sm transition duration-450 ease-out hover:ease-in ">
-      <Item
-        subheading={
-          reference == "Service"
-            ? "Learn how to sign up, install and use our products."
-            : "We are the face to be reckoned with"
-        }
-        title={reference == "Service" ? "Marketing" : "About Us"}
-        img={reference == "Service" ? "/marketing.webp" : "/office.webp"}
-        color="bg-red-100"
-      ></Item>
+      <Link to="">
+        <Item
+          subheading={
+            reference == "Service"
+              ? "Learn how to sign up, install and use our products."
+              : "We are the face to be reckoned with"
+          }
+          title={reference == "Service" ? "Marketing" : "About Us"}
+          img={reference == "Service" ? "/marketing.webp" : "/office.webp"}
+          color="bg-red-100"
+        ></Item>
+      </Link>
       <Item
         subheading={
           reference == "Service"

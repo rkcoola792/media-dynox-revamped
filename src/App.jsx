@@ -10,7 +10,7 @@ import AboutUS from "./components/Pages/Company/AboutUS/AboutUS.jsx";
 import Team from "./components/Pages/Company/Team/Team.jsx";
 
 
-import Technology from "./components/Pages/Services/Design/Technology/Technology.jsx";
+import Technology from "./components/Pages/Services/Technology/Technology.jsx";
 import Business from "./components/Pages/Services/Business/Business.jsx";
 import Marketing from "./components/Pages/Marketing/Marketing.jsx";
 import Design from "./components/Pages/Services/Design/Design.jsx";

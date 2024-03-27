@@ -7,6 +7,7 @@ const Section2 = ({
   firstParagraph,
   secondParagraph,
   thirdParagraph,
+  fourthParagraph
 }) => {
   return (
     <div className="Section-2 sm:px-24  sm:mt-20 px-8 sm:py-12 py-12">
@@ -46,14 +47,14 @@ const Section2 = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          {secondParagraph}
+          {thirdParagraph}
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          {thirdParagraph}
+          {fourthParagraph}
         </motion.p>
       </motion.div>
     </div>
