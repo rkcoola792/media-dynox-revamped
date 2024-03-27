@@ -56,10 +56,10 @@ const marketingContent=[
       >
         <Section2
           heading={marketingContent[1]?.heading}
-          subeading={marketingContent[1]?.subheading}
+          subheading={marketingContent[1]?.subheading}
           firstParagraph={marketingContent[1]?.firstParagraph}
-          SecondParagraph={marketingContent[1]?.secondParagraph}
-          ThirdParagraph={marketingContent[1]?.thirdParagraph}
+          secondParagraph={marketingContent[1]?.secondParagraph}
+          thirdParagraph={marketingContent[1]?.thirdParagraph}
         ></Section2>
       </motion.div>
       <motion.div
