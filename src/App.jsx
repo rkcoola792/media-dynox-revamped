@@ -6,6 +6,15 @@ import Footer from "./components/Footer/Footer";
 // import Test from "./components/Test/Test";
 import  Marketing from "./components/Marketing/Marketing.jsx"
 import { ShiftingDropDown } from "./components/HeaderNew/HeaderNew.jsx";
+import AboutUS from "./components/Pages/Company/AboutUS/AboutUS.jsx";
+import Team from "./components/Pages/Company/Team/Team.jsx";
+import { Work } from "@mui/icons-material";
+import Career from "./components/Pages/Career/Career.jsx";
+import Technology from "./components/Pages/Services/Design/Technology/Technology.jsx";
+import Business from "./components/Pages/Services/Business/Business.jsx";
+import Design from "./components/Pages/Services/Design/Design.jsx";
+import Blogs from "./components/Blogs/Blogs.jsx";
+import ReachUS from "./components/Pages/ReachUs/ReachUS.jsx";
 // import Scrollbar from "smooth-scrollbar";
 
 function App() {
@@ -30,6 +39,17 @@ function App() {
         { path: "/", element: <Homepage></Homepage> },
         { path: "/marketing", element: <Marketing
         ></Marketing> },
+
+        { path: "/about-us", element: <AboutUS/> },
+        { path: "/team", element: <Team/> },
+        { path: "/work", element: <Work/> },
+        { path: "/career", element: <Career/> },
+        { path: "/technology", element: <Technology/> },
+        { path: "/business", element: <Business/> },
+        { path: "/design", element: <Design/> },
+        { path: "/blogs", element: <Blogs/> },
+        { path: "/reach-us", element: <ReachUS/> },
+       
       ],
     },
   ]);
