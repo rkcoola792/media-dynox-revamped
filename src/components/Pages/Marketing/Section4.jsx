@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import Step from '../../Step/Step';
 
-const Section4 = () => {
+const Section4 = ({heading,subheading,paragraph}) => {
     const steps = [
       {
         title: "Research",
@@ -52,8 +52,8 @@ const Section4 = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <span className="font-semibold">How Marketing</span> Works Step by
-          Step flow
+          <span className="font-semibold">{heading}</span> {subheading}
+          
         </motion.h1>
         <motion.p
           className="leading-7"
@@ -61,10 +61,7 @@ const Section4 = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Announce your brand to the right people, at the right time with
-          innovative strategies that are built for your business and you.
-          Announce your brand to the right people, at the right time with
-          innovative strategies that are built for your business and you.
+          {paragraph}
         </motion.p>
       </div>
       <div className="flex flex-wrap sm:gap-12 gap-6 sm:mt-24 mt-12">

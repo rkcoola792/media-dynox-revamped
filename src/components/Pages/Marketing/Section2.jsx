@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 motion
-const Section2 = () => {
+const Section2 = ({
+  heading,
+  subeading,
+  firstParagraph,
+  SecondParagraph,
+  ThirdParagraph,
+}) => {
   return (
     <div className="Section-2 sm:px-24  sm:mt-20 px-8 sm:py-12 py-12">
       <motion.div
@@ -56,6 +62,6 @@ const Section2 = () => {
       </motion.div>
     </div>
   );
-}
+};
 
 export default Section2

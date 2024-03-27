@@ -14,30 +14,77 @@ import MoveTop from '../../Movetop/Movetop'
 import Section9 from '../../Homepage/Section9'
 
 const Marketing = () => {
+const marketingContent=[
+  {
+    name:"section1",
+     heading:"Marketing",
+        subheading:"that we offer",
+        first:"Home",
+        second:"Our Services",
+        third:"Marketing",
+},
+{
+  name:"section2",
+   heading:"What is",
+          subheading:"Marketing ?",
+          firstParagraph:"Brand purpose is the practice of increasing the quantity and quality of traffic to your website through organic search engine results",
+          secondParagraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into",
+          thirdParagraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into"
+},
+{
+   first:"Social Media",
+          second:"Paid Media",
+          third:"Digital Marketing",
+          fourth:"SEO"
+
+}
+]
+
   return (
     <div>
-      <Section1 heading="Marketing" subheading="that we offer" first="Home" second="Our Services" third="Marketing"></Section1>
+      <Section1
+        heading={marketingContent[0]?.heading}
+        subheading={marketingContent[0]?.subheading}
+        first={marketingContent[0]?.first}
+        second={marketingContent[0]?.second}
+        third={marketingContent[0]?.third}
+      ></Section1>
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Section2></Section2>
+        <Section2
+          heading={marketingContent[1]?.heading}
+          subeading={marketingContent[1]?.subheading}
+          firstParagraph={marketingContent[1]?.firstParagraph}
+          SecondParagraph={marketingContent[1]?.secondParagraph}
+          ThirdParagraph={marketingContent[1]?.thirdParagraph}
+        ></Section2>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Section3 first="Social Media" second="Paid Media" third="Digital Marketing" fourth="SEO"></Section3>
+        <Section3
+          first={marketingContent[2]?.first}
+          second={marketingContent[2]?.second}
+          third={marketingContent[2]?.third}
+          fourth={marketingContent[2]?.fourth}
+        ></Section3>
       </motion.div>
- 
+
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Section4></Section4>
+        <Section4
+          heading="How Marketing"
+          subheading="Works Step by Step flow"
+          paragraph="Announce your brand to the right people, at the right time with innovative strategies that are built for your business and you. Announce your brand to the right people, at the right time with innovative strategies that are built for your business and you"
+        ></Section4>
       </motion.div>
 
       <motion.div
@@ -84,8 +131,7 @@ const Marketing = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-
-      <Section10></Section10>
+        <Section10></Section10>
       </motion.div>
     </div>
   );
