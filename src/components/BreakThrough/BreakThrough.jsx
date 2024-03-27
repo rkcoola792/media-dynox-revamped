@@ -7,7 +7,7 @@ const BreakThrough = ({step,heading,subheading}) => {
     <section>
       <div className="break-through flex gap-4 mb-16 ">
         <motion.div
-          className="  flex justify-center items-center left-circle bg-red-300 h-[150px] w-[150px] rounded-[50%] text-3xl hover:bg-mainred hover:text-white cursor-pointer transition duration-200 ease-linear hover:ease-linear"
+          className="  flex justify-center items-center left-circle bg-red-300 h-[75px] w-[75px] rounded-[50%] text-3xl hover:bg-mainred hover:text-white cursor-pointer transition duration-200 ease-linear hover:ease-linear"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{
@@ -21,7 +21,7 @@ const BreakThrough = ({step,heading,subheading}) => {
         </motion.div>
 
         <motion.div
-          className="right-div  flex flex-col gap-4  mt-[14px] w-[60%]"
+          className="right-div  flex flex-col gap-4   w-[60%]"
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.1  }}
