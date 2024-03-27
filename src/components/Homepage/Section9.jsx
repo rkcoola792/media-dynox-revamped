@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Explore from "../Explore/Explore";
 
-const Section9 = () => {
+const Section9 = ({heading,subheading}) => {
   return (
     <motion.div
       className="relative w-full  flex justify-center mt-32 px-8 "
@@ -24,8 +24,8 @@ const Section9 = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        <span className="font-bold">Lets discuss</span> make something cool
-        together
+        <span className="font-bold">{heading}</span> {subheading}
+        
       </motion.h1>
       <motion.div
         className="absolute lg:bottom-28 sm:bottom-16 bottom-[20%]"

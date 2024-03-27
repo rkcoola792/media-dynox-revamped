@@ -35,7 +35,11 @@ const Homepage = () => {
         <Section6></Section6>
       </section>
       <Section8></Section8>
-      <Section9></Section9>
+      <Section9
+        heading="Lets discuss"
+        subheading="make something cool
+        together"
+      ></Section9>
       {/* <Circle></Circle> */}
     </div>
   );

@@ -16,7 +16,7 @@ import Section9 from '../../Homepage/Section9'
 const Marketing = () => {
   return (
     <div>
-      <Section1></Section1>
+      <Section1 heading="Marketing" subheading="that we offer" first="Home" second="Our Services" third="Marketing"></Section1>
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,9 +29,9 @@ const Marketing = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Section3></Section3>
+        <Section3 first="Social Media" second="Paid Media" third="Digital Marketing" fourth="SEO"></Section3>
       </motion.div>
-
+ 
       <motion.div
         initial={{ opacity: 0, y: 75 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ const Marketing = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Section9></Section9>
+        <Section9 heading="Your Growth," subheading="Our way"></Section9>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 75 }}
