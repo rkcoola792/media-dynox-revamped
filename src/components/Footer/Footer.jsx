@@ -50,7 +50,7 @@ const Footer = () => {
               </h3>
             </div>
           </div>
-          <div className="contact flex flex-col w-[250px]">
+          <div className="contact-div flex flex-col w-[250px]">
             <h1 className="text-white sm:text-2xl text-3xl mb-6">Contact</h1>
             <div className="contact-elements flex flex-col sm: gap-2">
               <div className="address flex gap-2 ">
