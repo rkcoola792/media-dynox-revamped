@@ -114,7 +114,7 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      <div className="right md:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12  ">
+      <div className="right md:w-[35%] bg-slate-100 flex flex-col lg:pl-10 sm:pl-10 sm:pt-24 pt-12 pl-8 py-12 sm:mt-2 ">
         <motion.div
           className="top flex flex-col gap-2 "
           initial={{ opacity: 0, y: 75 }}

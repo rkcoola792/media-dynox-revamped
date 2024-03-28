@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export const Item = ({ title, subheading, img, color }) => {
   return (
-    <div className="item flex gap-2 hover:bg-gray-100 cursor-pointer">
+    <div className="item flex gap-2 p-2 rounded-md hover:bg-gray-100 cursor-pointer">
       <div className="image">
         <div
           className={`w-12 h-12 rounded-[50%] flex ${color} justify-center items-center`}
@@ -23,7 +23,7 @@ const Dropdown = ({ reference }) => {
   console.log("referece recicev", reference);
 
   return (
-    <div className="dropdown w-[380px] p-8 shadow-lg flex flex-col gap-8 rounded-sm transition duration-450 ease-out hover:ease-in ">
+    <div className="dropdown w-[380px] p-4 shadow-lg flex flex-col gap-4  px-6 rounded-md transition duration-450 ease-out hover:ease-in py-8 ">
       <Link to={`${reference == "Service" ? "/marketing" : "/about-us"}`}>
         <Item
           subheading={
