@@ -66,7 +66,6 @@ const Header = () => {
               >
                 .
               </span>
-              {/* <div>{<Dropdown reference=""></Dropdown>}</div> */}
             </div>
             <div
               className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer"
@@ -120,7 +119,6 @@ const Header = () => {
             className="company flex items-center"
             id="Company"
             onMouseEnter={(e) => {
-              // console.log("id", e?.target?.id);
               setReference(e?.target?.id);
               setServiceDropdown(true);
             }}
@@ -161,7 +159,7 @@ const Header = () => {
             <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
               Blogs
             </h1>
-          </Link>
+          </Link> 
           <Link to="/contact">
             <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
               Reach Us

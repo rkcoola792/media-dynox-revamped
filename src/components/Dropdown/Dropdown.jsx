@@ -12,10 +12,8 @@ export const Item = ({ title, subheading, img, color }) => {
         </div>
       </div>
       <div className="texts">
-        <Link to="/marketing">
           <div className="heading font-semibold">{title}</div>
           <div className="subheading text-sm">{subheading}</div>
-        </Link>
       </div>
     </div>
   );
@@ -26,7 +24,7 @@ const Dropdown = ({ reference }) => {
 
   return (
     <div className="dropdown w-[380px] p-8 shadow-lg flex flex-col gap-8 rounded-sm transition duration-450 ease-out hover:ease-in ">
-      <Link to="">
+      <Link to={`${reference == "Service" ? "/marketing" : "/about-us"}`}>
         <Item
           subheading={
             reference == "Service"
@@ -38,36 +36,42 @@ const Dropdown = ({ reference }) => {
           color="bg-red-100"
         ></Item>
       </Link>
-      <Item
-        subheading={
-          reference == "Service"
-            ? "Learn, share and connect with other users."
-            : "The brain behind the brilliance "
-        }
-        title={reference == "Service" ? "Technology" : "Team"}
-        img={reference == "Service" ? "/technology.webp" : "/team.webp"}
-        color="bg-blue-100"
-      ></Item>
-      <Item
-        subheading={
-          reference == "Service"
-            ? "Learn how to sign up, install and use our products."
-            : "Fueling innovation, one step at a time"
-        }
-        title={reference == "Service" ? "Business" : "Work"}
-        img={reference == "Service" ? "/business.webp" : "work.webp"}
-        color="bg-green-100"
-      ></Item>
-      <Item
-        subheading={
-          reference == "Service"
-            ? "Learn, share and connect with other users."
-            : "Come be a part of our team!"
-        }
-        title={reference == "Service" ? "Design" : "Career"}
-        img={reference == "Service" ? "/design.webp" : "/team.webp"}
-        color="bg-orange-100"
-      ></Item>
+      <Link to={`${reference == "Service" ? "/technology" : "/team"}`}>
+        <Item
+          subheading={
+            reference == "Service"
+              ? "Learn, share and connect with other users."
+              : "The brain behind the brilliance "
+          }
+          title={reference == "Service" ? "Technology" : "Team"}
+          img={reference == "Service" ? "/technology.webp" : "/team.webp"}
+          color="bg-blue-100"
+        ></Item>
+      </Link>
+      <Link to={`${reference == "Service" ? "/business" : "/work"}`}>
+        <Item
+          subheading={
+            reference == "Service"
+              ? "Learn how to sign up, install and use our products."
+              : "Fueling innovation, one step at a time"
+          }
+          title={reference == "Service" ? "Business" : "Work"}
+          img={reference == "Service" ? "/business.webp" : "work.webp"}
+          color="bg-green-100"
+        ></Item>
+      </Link>
+      <Link to={`${reference == "Service" ? "/design" : "/career"}`}>
+        <Item
+          subheading={
+            reference == "Service"
+              ? "Learn, share and connect with other users."
+              : "Come be a part of our team!"
+          }
+          title={reference == "Service" ? "Design" : "Career"}
+          img={reference == "Service" ? "/design.webp" : "/team.webp"}
+          color="bg-orange-100"
+        ></Item>
+      </Link>
     </div>
   );
 };
