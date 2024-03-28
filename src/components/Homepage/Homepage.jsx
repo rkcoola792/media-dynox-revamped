@@ -12,6 +12,9 @@ import Section6 from './Section6'
 import Section4 from './Section4'
 
 import MoveTop from '../Movetop/Movetop'
+import MobileHeaderDropdown from '../MobileHeaderDropdown/MobileHeaderDropdown'
+import MobileHeaderForCompany from '../MobileHeaderDropdown/MobileHeaderForCompany'
+
 // import Circle from '../Test/Test'
 const Homepage = () => {
     const { scrollYProgress } = useScroll();
@@ -25,7 +28,7 @@ const Homepage = () => {
       <motion.div className="progress-bar" style={{ scaleX }} />
       {/* <ProgressBar></ProgressBar> */}
 
-      <Section1></Section1>
+      {/* <Section1></Section1>
       <MoveTop></MoveTop>
       <Section2></Section2>
       <Section3></Section3>
@@ -39,7 +42,9 @@ const Homepage = () => {
         heading="Lets discuss"
         subheading="make something cool
         together"
-      ></Section9>
+      ></Section9> */}
+      {/* <MobileHeaderDropdown></MobileHeaderDropdown>
+      <MobileHeaderForCompany></MobileHeaderForCompany> */}
       {/* <Circle></Circle> */}
     </div>
   );

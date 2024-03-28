@@ -4,6 +4,8 @@ import { motion, useScroll, useSpring } from "framer-motion";
 // import "./pogressbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import Dropdown from "../Dropdown/Dropdown";
+import MobileHeaderForCompany from "../MobileHeaderDropdown/MobileHeaderForCompany";
+import MobileHeaderDropdown from "../MobileHeaderDropdown/MobileHeaderDropdown";
 const Header = () => {
   const [openServices, setOpenServices] = useState(true);
   const [serviceDropdown, setServiceDropdown] = useState(false);
@@ -33,7 +35,7 @@ const Header = () => {
 
       {mobileHeader && (
         <motion.div
-          className="mobile-header fixed md:hidden h-screen z-[100] bg-gray-100 w-[70%] sm:w-[50%] shadow-lg transition duration-200 ease-linear hover:ease-linear"
+          className="mobile-header fixed md:hidden  z-[100] bg-gray-100 w-[70%] h-svh sm:w-[50%] shadow-lg transition duration-200 ease-linear hover:ease-linear"
           initial={{ x: -30, opacity: 0 }}
           animate={{
             x: 0,
@@ -48,42 +50,8 @@ const Header = () => {
               </h1>
             </Link>
 
-            <div
-              className="company flex items-center"
-              id="Company"
-              // onClick={}
-            >
-              <span
-                className="lg:text-lg cursor-pointer  transition duration-450 ease-out hover:ease-in hover:text-mainred font-semibold"
-                id="Company"
-              >
-                Company
-              </span>
-              &nbsp;
-              <span
-                className="cursor-pointer text-mainred font-extrabold mb-1 "
-                id="Company"
-              >
-                .
-              </span>
-            </div>
-            <div
-              className="services transition duration-450 ease-out hover:ease-in flex items-center lg:text-lg font-semibold  hover:text-mainred cursor-pointer"
-              id="Service"
-              onMouseEnter={(e) => {
-                setReference(e?.target?.id);
-                setServiceDropdown(true);
-              }}
-              onMouseLeave={() => setServiceDropdown(false)}
-            >
-              <h1 className="" id="Service">
-                Services
-              </h1>
-              &nbsp;
-              <span className="text-mainred font-extrabold mb-1 " id="Service">
-                {openServices ? "." : "."}
-              </span>
-            </div>
+           <MobileHeaderForCompany/>
+           <MobileHeaderDropdown/>
             <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
               Blogs
             </h1>
