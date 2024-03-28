@@ -1,13 +1,14 @@
 @import "../../app.scss";
 .contact {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: center;
   height: 100%;
   padding-top: 70px;
   gap: 50px;
   margin: auto;
-  width: 70%;
+  width: 85%;
+//   padding: ;
 
   @include mobile {
     flex-direction: column;
@@ -23,13 +24,14 @@
     gap: 30px;
     @include mobile {
       text-align: center;
-      margin-top: 40px;
+    //   margin-top: 40px;
       gap: 15px;
     }
 
     h1 {
-      font-size: 64px;
+      font-size: 40px;
       line-height: 0.95;
+      font-weight: 600;
 
       @include mobile{
         font-size:48px;
@@ -46,10 +48,12 @@
     
     .svg {
       position: absolute;
-      stroke: orange;
-      height: 90%;
-      width: 90%;
+      stroke: red;
+      height: 70%;
+      width: 70%;
       z-index: -1;
+      right: 15%;
+      top:-5%;
 
       @include mobile {
         margin-top: 40px;
@@ -62,7 +66,7 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-top: 20px;
+    //   margin-top: 20px;
       
         @include mobile {
           margin-top: 0px;
@@ -75,7 +79,7 @@
         background-color: transparent;
         color: white;
         border: none;
-        border: 1px solid white;
+        border: 1px solid rgb(190, 196, 201);
         border-radius: 5px;
         
       }
@@ -86,11 +90,12 @@
         }
       }
       button {
-        background-color: orange;
+        background-color: #ff002e;
         padding: 15px;
         border-radius: 5px;
         color: black;
         cursor: pointer;
+        color: white;
         font-weight: 500;
         font-size: large;
         &:hover {

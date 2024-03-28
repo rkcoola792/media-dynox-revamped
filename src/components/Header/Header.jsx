@@ -88,9 +88,11 @@ const Header = () => {
             <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
               Blogs
             </h1>
-            <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
-              Reach Us
-            </h1>
+            <Link to="/contact">
+              <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
+                Reach Us
+              </h1>
+            </Link>
           </div>
         </motion.div>
       )}
@@ -158,9 +160,11 @@ const Header = () => {
           <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
             Blogs
           </h1>
-          <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
-            Reach Us
-          </h1>
+          <Link to="/contact">
+            <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
+              Reach Us
+            </h1>
+          </Link>
         </div>
         <div
           className="absolute z-20 bg-slate-50 right-72 top-[65px]"
