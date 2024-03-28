@@ -14,11 +14,12 @@ import Technology from "./components/Pages/Services/Technology/Technology.jsx";
 import Business from "./components/Pages/Services/Business/Business.jsx";
 import Marketing from "./components/Pages/Marketing/Marketing.jsx";
 import Design from "./components/Pages/Services/Design/Design.jsx";
-import Blogs from "./components/Blogs/Blogs.jsx";
+
 import ReachUS from "./components/Pages/ReachUs/ReachUS.jsx";
 import Work from "./components/Pages/Company/Work/Work.jsx";
 import Career from "./components/Pages/Company/Career/Career.jsx";
 import Contact from "./components/ContactUs/ContactUs.jsx";
+import Blogs from "./components/Pages/Blogs/Blogs.jsx";
 // import Scrollbar from "smooth-scrollbar";
 
 function App() {

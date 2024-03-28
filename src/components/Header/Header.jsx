@@ -157,9 +157,11 @@ const Header = () => {
               {openServices ? "." : "."}
             </span>
           </div>
-          <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
-            Blogs
-          </h1>
+          <Link to="/blogs">
+            <h1 className="lg:text-lg  hover:text-mainred cursor-pointer font-semibold transition duration-450 ease-out hover:ease-in">
+              Blogs
+            </h1>
+          </Link>
           <Link to="/contact">
             <h1 className="lg:text-lg  hover:text-mainred transition duration-450 ease-out hover:ease-in cursor-pointer font-semibold">
               Reach Us
