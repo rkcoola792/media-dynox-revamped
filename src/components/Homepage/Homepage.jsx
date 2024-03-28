@@ -28,7 +28,7 @@ const Homepage = () => {
       <motion.div className="progress-bar" style={{ scaleX }} />
       {/* <ProgressBar></ProgressBar> */}
 
-      {/* <Section1></Section1>
+      <Section1></Section1>
       <MoveTop></MoveTop>
       <Section2></Section2>
       <Section3></Section3>
@@ -42,10 +42,8 @@ const Homepage = () => {
         heading="Lets discuss"
         subheading="make something cool
         together"
-      ></Section9> */}
-      {/* <MobileHeaderDropdown></MobileHeaderDropdown>
-      <MobileHeaderForCompany></MobileHeaderForCompany> */}
-      {/* <Circle></Circle> */}
+      ></Section9>
+     
     </div>
   );
 }

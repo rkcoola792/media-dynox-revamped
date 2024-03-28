@@ -6,21 +6,30 @@ import "./Section1.scss";
 // import HeroCard from "
 import { useState, useEffect } from "react";
 const Section1 = () => {
-  const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
+  const [circlePositionDesktop, setCirclePositionDesktop] = useState({ x: 0, y: 0 });
+  const [circlePositionMobile, setCirclePositionMobile] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollX = window.scrollX;
-      const scrollY = window.scrollY;
-      setCirclePosition({ x: scrollY, y: scrollY });
-    };
+  console.log(circlePositionMobile)
 
-    window.addEventListener("scroll", handleScroll);
+  // if (circlePositionMobile>=538){
+  // console.log("true")
+  // setCirclePositionMobile(prev=>prev)
+  // }
+  // setCirclePositionMobile(prev=>prev.y==538)
+    useEffect(() => {
+      const handleScroll = () => {
+        // const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+        setCirclePositionDesktop({ x: scrollY, y: scrollY });
+        setCirclePositionMobile(scrollY);
+      };
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
   return (
     <div className="hero-banner sm:flex sm:flex-row sm:items-center lg:px-24 px-8 sm:relative flex flex-col items-center text-center sm:text-left pt-12 sm:pt-0">
       <div className="left-details sm:w-[60%] flex flex-col text-3xl  ">
@@ -83,8 +92,8 @@ const Section1 = () => {
           className={`desktop-circle-actual lg:w-[310px] lg:h-[310px] md:w-[200px] md:h-[200px] `}
           style={{
             position: "absolute",
-            top: circlePosition.y + 190 + "px",
-            right: circlePosition.x + 300 + "px",
+            top: circlePositionDesktop.y + 190 + "px",
+            right: circlePositionDesktop.x + 300 + "px",
             backgroundColor: "red",
             borderRadius: "50%",
             opacity: "50%",
@@ -104,8 +113,8 @@ const Section1 = () => {
           className={`mobile-circle sm:hidden bg-red-400 w-72 h-72 rounded-[50%] absolute top-32  `}
           style={{
             position: "absolute",
-            top: circlePosition.y + 300 + "px",
-            // right: circlePosition.x + 300 + "px",
+            top: circlePositionDesktop.y + 300 + "px",
+            // right: circlePositionDesktop.x + 300 + "px",
             right:"15%",
             backgroundColor: "red",
             borderRadius: "50%",
